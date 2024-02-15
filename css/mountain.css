@@ -1,0 +1,380 @@
+/* Global Starts */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ddd;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-left: auto;;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width : 768px) {
+    .container
+    {
+        width: 750px
+    }
+}
+/* Meduim */
+@media (min-width : 992px) { 
+    .container
+    {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width : 1200px){
+    .container
+    {
+        width: 1170px;
+    }
+}
+/* Global End */
+/* Start Header */
+
+header{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 97px;
+}
+header nav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+}
+header nav ul{
+    display: flex;
+    padding: 10px;
+    margin-left: -20px;
+}
+header nav ul li{
+    padding: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}
+header nav ul li:hover{
+    border-bottom: 1px solid #a2a2a2;
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.a4{
+    margin-left: 46%;
+    color: white;
+}
+.a5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+/* End Header */
+.landing{
+    min-height: 100vh;
+    background-image: url(/images//black-and-white-landscape-photographs-inspire-adventure-feature.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 /70%);
+
+}
+.landing .text {
+    position: absolute;
+    color: white;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    transform: translate(50%,-100%);
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.landing  .text .content h2{
+    font-family: "StereoGothicW01-150";
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+.landing  .text .content p{
+    line-height: 1.6;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.landing  .text .content button{
+    border: 2px solid #a2a2a2;
+    margin-top: 20px;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    transition: 0.3s
+}
+.landing  .text .content button:hover{
+    background-color:white;
+    color:black;
+
+}
+.landing .change-background{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a2a2a2;
+}
+.landing .fa-angle-left{
+    position: absolute;
+    left: 30px;
+}
+.landing .fa-angle-right{
+    position: absolute;
+    right: 30px;
+}
+.landing .bullets{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    display: flex;
+}
+.landing .bullets li
+{
+    width: 70px;
+    height: 20px;
+    border: 1px solid #a2a2a2;
+    margin: 0 8px;
+} 
+.landing .bullets li.active{
+    background-color: #a2a2a2;
+}
+/* Start Section */
+.first-section{
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 270px;
+}
+.first-section .text{
+    position: absolute;
+    color: black;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 50px;
+    margin-top: 100px;
+}
+.first-section .text h2{
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+.first-section .text p{
+    line-height: 1.6;
+    font-weight: 400;
+    max-height: 100%;
+    margin-top: 10px;
+
+}
+.first-section .text button{
+    border: 2px solid #a2a2a2;
+    margin-top: 15px;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+}
+.first-section img {
+    position: absolute;
+    left: 20px;
+    transform: translateY(-22.5%);
+    display: flex;
+    width: 590px;
+    box-shadow: 15px 15px 15px rgb(0, 0, 0);
+    z-index: 10;
+}
+/* Start Second Section */
+.Second-section{
+    min-height: 100vh;
+    background-image: url(/images/1074823-landscape-black-waterfall-monochrome-water-nature-photography-cliff-light-wave-darkness-atmospheric-phenomenon-black-and-white-monochrome-photography-water-feature.jpg);
+    background-size: cover;
+    position: relative;
+    margin-bottom: 270px;
+}
+.Second-section .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 /60%);
+}
+.Second-section .text {
+    position: absolute;
+    color: white;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    transform: translate(50%,-100%);
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Second-section  .text .content h2{
+    font-family: "StereoGothicW01-150";
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+.Second-section  .text .content p{
+    line-height: 1.6;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.Second-section  .text .content button{
+    border: 2px solid #a2a2a2;
+    margin-top: 20px;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+}
+.Second-section .change-background{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a2a2a2;
+    font-size: 40px;
+}
+.Second-section .fa-angle-left{
+    position: absolute;
+    left: 60px;
+}
+.Second-section .fa-angle-right{
+    position: absolute;
+    right: 60px;
+}
+.Second-section .bullets{
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    display: flex;
+}
+.Second-section .bullets li
+{
+    width: 70px;
+    height: 20px;
+    border: 1px solid #a2a2a2;
+    margin: 0 8px;
+} 
+.Second-section .bullets li.active{
+    background-color: #a2a2aa
+}
+/* End Second Section */
+.third-section{
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    
+}
+.third-section .text{
+    position: absolute;
+    color: black;
+    left: 0;
+    transform: translateY(-100%);
+    width: 50%;
+    padding: 50px;
+
+}
+.third-section .text h2{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+.third-section .text p{
+    direction: rtl;
+    line-height: 1.6;
+    font-weight: 400;
+    max-height: 100%;
+    margin-top: 10px;
+
+}
+.third-section .text button{
+    position: absolute;
+    right: 50px;
+    border: 2px solid #a2a2a2;
+    margin-top: 15px;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+}
+.third-section img {
+    position: absolute;
+    right: 60px;
+    transform: translateY(-70%);
+    display: flex;
+    width: 390px;
+    box-shadow: -15px -15px 15px rgb(0, 0, 0);
+    z-index: 10;
+}
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 200px;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer i{
+    display: flex;
+    padding: 60px;
+    font-size: 40px;
+}
