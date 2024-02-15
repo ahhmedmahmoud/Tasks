@@ -98,7 +98,7 @@ header nav ul li a{
 /* End Header */
 .landing{
     min-height: 100vh;
-    background-image: url(/images//black-and-white-landscape-photographs-inspire-adventure-feature.jpg);
+    background-image: url(./images//black-and-white-landscape-photographs-inspire-adventure-feature.jpg);
     background-size: cover;
     position: relative;
 }
@@ -230,7 +230,7 @@ header nav ul li a{
 /* Start Second Section */
 .Second-section{
     min-height: 100vh;
-    background-image: url(/images/1074823-landscape-black-waterfall-monochrome-water-nature-photography-cliff-light-wave-darkness-atmospheric-phenomenon-black-and-white-monochrome-photography-water-feature.jpg);
+    background-image: url(./images/1074823-landscape-black-waterfall-monochrome-water-nature-photography-cliff-light-wave-darkness-atmospheric-phenomenon-black-and-white-monochrome-photography-water-feature.jpg);
     background-size: cover;
     position: relative;
     margin-bottom: 270px;
